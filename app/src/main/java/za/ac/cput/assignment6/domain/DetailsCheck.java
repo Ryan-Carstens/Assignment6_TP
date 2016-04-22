@@ -4,10 +4,10 @@ package za.ac.cput.assignment6.domain;
  * Created by Ryan Carstens 213133040.
  */
 public class DetailsCheck {
-    private String id;
+    private Long id;
     private boolean response;
 
-    public String getId() {
+    public Long getId() {
         return id;
     }
 
@@ -26,10 +26,10 @@ public class DetailsCheck {
     }
 
     public static class Builder{
-        private String id;
+        private Long id;
         private boolean response;
 
-        public Builder id(String value){
+        public Builder id(Long value){
             this.id = value;
             return this;
         }
